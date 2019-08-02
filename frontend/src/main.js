@@ -12,7 +12,6 @@ Vue.config.productionTip = false
 const apiURL= "http://localhost:8083/";
 Vue.use(resource);
 Vue.http.options.root = apiURL;
-axios.defaults.baseURL = apiURL;
 
 Vue.http.interceptors.push(function(request) {
     request.url = apiURL + request.url;
