@@ -12,7 +12,7 @@ Vue.use(IonicVueRouter);
 Vue.use(Router);
 
 const router = new  IonicVueRouter({
-    mode: 'history',
+    mode: process.env.CORDOVA_PLATFORM ? 'hash' : 'history',
     base: "/",
     routes: [
         {
