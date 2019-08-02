@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --inspect server.js",
+    "serve": "node server.js",
+    "filDB": "node fildb.js"
+  },
+  "author": "Artamonov Ryslan",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.1.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.7",
+    "password-hash": "^1.2.2",
+    "password-validator": "^4.1.1"
+  }
+}

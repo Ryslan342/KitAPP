@@ -1,0 +1,13 @@
+{
+  "mongodb": {
+    "url": "mongodb://localhost:27017/data"
+  },
+  "server": {
+    "host": "localhost",
+    "port": 8083,
+    "cookie-secret": ["pgesD[pfG;]2gjehg", "jrio[gfaen esr[P?"]
+  },
+  "client": {
+    "host": "http://localhost:8080"
+  }
+}
