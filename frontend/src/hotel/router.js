@@ -4,7 +4,7 @@ import list from './Rooms.vue'
 import room from './Room.vue'
 
 export default {
-    path: '/hotel/:id',
+    path: '/hotels/:id',
         name: 'hotel',
     component: main,
     children: [
@@ -13,7 +13,7 @@ export default {
             component: list
         },
         {
-            path: 'room/:roomId',
+            path: 'room/:roomId/',
             component: room,
             props: true
         }

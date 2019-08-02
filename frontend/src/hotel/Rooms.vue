@@ -2,7 +2,7 @@
   <ion-content>
     <v-card v-for="room of rooms" v-if="!error"
             v-bind:header="`Номер ${ room.number }`"
-            v-on:headerClick="$router.push($route.fullPath + '/room/' + room._id)"
+            v-on:headerClick="$router.push(`/hotels/${ hotel._id }/room/${ room._id }`)"
     >
         {{ room.description }}
     </v-card>

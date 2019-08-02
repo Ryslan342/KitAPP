@@ -1,12 +1,12 @@
 <template>
   <div class="ion-page">
     <v-header v-if="!error">
-      Отели ({{ hotels.length }})
+      Отели ({{ hotels.length }});
     </v-header>
 
     <ion-content class="ion-padding" v-if="!error">
       <v-card v-for="(hotel, index) of hotels"
-              v-on:headerClick="$router.push('/hotel/' + hotel._id)"
+              v-on:headerClick="$router.push('/hotels/' + hotel._id)"
               v-bind:header="hotel.name"
       >
         {{ hotel.description }}
