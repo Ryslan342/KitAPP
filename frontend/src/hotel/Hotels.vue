@@ -43,7 +43,7 @@
                 this.error = null;
 
                 this.waiting = true;
-                this.$http.get("hotels/").then((res) => {
+                this.$http.get("/hotels/").then((res) => {
                     this.waiting = false;
                     this.hotels = res.data;
                 }, (err) => {

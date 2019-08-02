@@ -75,7 +75,7 @@
             load() {
                 this.error = null;
                 this.waiting = true;
-                this.$http.get(`hotels/${ this.hotel._id }/rooms/${ this.roomId }`).then((res) => {
+                this.$http.get(`/hotels/${ this.hotel._id }/rooms/${ this.roomId }`).then((res) => {
                     this.waiting = false;
                     this.room = res.data;
                 }, (err) => {
@@ -103,7 +103,7 @@
                     duration: this.timeout,
                 }).then((waiting) => {
                     waiting.present();
-                    this.$http.post(`hotels/${ this.hotel._id }/rooms/${ this.room._id }/order`, {}).then((res) => {
+                    this.$http.post(`/hotels/${ this.hotel._id }/rooms/${ this.room._id }/order`, {}).then((res) => {
                         waiting.dismiss();
                         this.room.free = false;
                         this.displaySuccessfulOrder();

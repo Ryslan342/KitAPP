@@ -32,7 +32,7 @@ window.vue = new Vue({
     },
     methods: {
         checkLoginAndUpdateUserData() {
-            this.$http.get("sign/user").then((res) => {
+            this.$http.get("/sign/user").then((res) => {
                 this.$root.user = res.data;
             }, (err) => {
                 if (!err) {

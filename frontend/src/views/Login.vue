@@ -56,7 +56,7 @@
                 }).then(waiting => {
                     waiting.present();
 
-                    this.$http.post("sign/in", loginData).then((res) => {
+                    this.$http.post("/sign/in", loginData).then((res) => {
                         waiting.dismiss();
                         this.$root.user = res.data;
 

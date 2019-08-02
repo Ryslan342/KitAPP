@@ -30,7 +30,7 @@
             load() {
                 this.waiting = true;
                 this.error = null;
-                this.$http.get("hotels/" + this.id).then((res) => {
+                this.$http.get("/hotels/" + this.id).then((res) => {
                     this.waiting = false;
                     this.hotel = res.data;
                 }, (err) => {
