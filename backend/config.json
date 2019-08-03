@@ -4,10 +4,15 @@
   },
   "server": {
     "host": "localhost",
-    "port": 8083,
-    "cookie-secret": ["pgesD[pfG;]2gjehg", "jrio[gfaen esr[P?"]
+    "port": 8083
   },
   "client": {
-    "host": "http://localhost:8080"
+    "host": "http://localhost:8080",
+    "public_dir": "../frontend/dist/",
+    "root_file": {
+      "file": "index.html",
+      "paths": ["/", "/hotel/:id", "hotel/:id/rooms", "hotel/:id/rooms/:id"],
+      "type": "html"
+    }
   }
 }
